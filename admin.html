@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Панель администратора</h1>
+    </header>
+
+    <main>
+        <form id="login-form">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Войти</button>
+        </form>
+
+        <div id="admin-panel" style="display:none;">
+            <h2>Добавить запись</h2>
+            <form id="post-form">
+                <label for="post-title">Название:</label>
+                <input type="text" id="post-title" required>
+
+                <label for="post-content">Содержимое:</label>
+                <textarea id="post-content" required></textarea>
+
+                <button type="submit">Добавить запись</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DoshaGames. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
